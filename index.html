@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Notices page main">
+    <title>Notices</title>
+    <link rel="stylesheet" href="./css/global/global.css">
+    <link rel="stylesheet" href="./css/principal/principal.css">
+    <script src="https://kit.fontawesome.com/c82c5bef31.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- Start header -->
+
+    <header>
+        <nav>
+             <div class="row-cont">
+                <div class="logo-cont">
+                    <img src="Img/PORTAL-movil-logo-08.webp" alt="logo-page">
+                </div>
+
+                <!-- Start header mobile -->
+                <div class="open-modal-cont">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <!-- End header mobile -->
+
+                <!-- Start header desktop -->
+                <ul class="ul_pages">
+                    <li class="li_page"><a href="index.html">Inicio</a></li>
+                    <li class="li_page"><a href="Pages/notices.html">Noticias</a></li>
+                    <li class="li_page"><a href="#contact-section">Contactame</a></li>
+                </ul>
+                <!-- End header desktop-->
+
+             </div>
+        </nav>
+    </header>
+    <!-- End header -->
+
+    <!-- Start main -->
+
+    <main>
+        <section class="initial-presentation-section">
+            <div class="initial-presentation">
+                <div class="title-page">
+                    <h1>Tu ventana al mundo en tiempo real</h1>
+                </div>
+
+                <div class="phrase-cont">
+                    <span class="phrase">"Las últimas noticias, análisis y tendencias al alcance de un clic, para que siempre estés informado."</span>
+                </div>
+
+                <div class="notices-btn-cont">
+                    <button id="notices-btn">Ver noticias</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-web-section">
+            <div class="info-web-cont">
+                <div class="info-title-cont">
+                    <span class="info-title">¿QUIENES SOMOS?</span>
+                </div>
+                <div class="info-cont">
+                    <div class="line-gradiant"></div>
+                    <div class="description-cont">
+                        <p>En [Nombre de tu página], creemos en el poder de la información para transformar la sociedad. Somos un medio digital independiente dedicado a llevarte las últimas noticias, análisis y tendencias de manera precisa, objetiva y en tiempo real.</p>
+                        <p>Nuestra misión es mantenerte informado con contenido confiable y accesible, cubriendo temas de actualidad, política, economía, tecnología, deportes, cultura y mucho más. Contamos con un equipo de periodistas, analistas y colaboradores apasionados por brindar noticias relevantes que te ayuden a entender el mundo que te rodea.</p>
+                        <p>Nos esforzamos por ser un puente entre la información y las personas, promoviendo el pensamiento crítico y la transparencia en cada historia que contamos. En [Nombre de tu página], tu derecho a estar informado es nuestra prioridad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact-section">
+            <div class="contact-cont">
+                <div class="contact-title">
+                    <span>Concactame</span>
+                </div>
+
+                <div class="form-cont">
+                    <form id="contact-form">
+                        <div class="name-cont">
+                            <label for="name_input">Nombre<b>*</b></label>
+                            <input type="text" id="name_input" placeholder="Ingrese su nombre" required>
+                        </div>
+                        <div class="last-name-cont">
+                            <label for="last_name_input">Apellido<b>*</b></label>
+                            <input type="text" id="last_name_input" placeholder="Ingrese su apellido" required>
+                        </div>
+                        <div class="email-cont">
+                            <label for="email_input">Email<b>*</b></label>
+                            <input type="email" id="email_input" placeholder="Ingrese su email" required>
+                        </div>
+                        <div class="message-cont">
+                            <label for="mesasge_input">Message<b>*</b></label>
+                            <textarea id="message_input" placeholder="Ingrese su mensaje" required></textarea>
+                        </div>
+                        <div class="submit-cont">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- End main -->
+
+    <!-- Start modal -->
+    <div class="modal-background-cont">
+        <div class="menu-background">
+            <div class="close-btn-cont">
+                <button id="close-btn">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+            </div>
+
+            <ul class="ul_pages-resp">
+                <li class="li_page-resp"><a href="">Inicio</a></li>
+                <li class="li_page-resp"><a href="">Noticias</a></li>
+                <li class="li_page-resp"><a href="">Contactame</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cookies-modal-background-cont">
+        <div class="warning-cont">
+            <div class="warning-title-cont">
+                <span>Aviso de cookies</span>
+            </div>
+            <div class="warning-pharse-cont">
+                <p class="warning-pharse">Este sitio web utiliza cookies para mejorar su experiencia. Al continuar navegando, acepta nuestro uso de cookies.</p>
+            </div>
+            <div class="warning-buttons-cont">
+                <button id="accept-btn">Accept</button>
+                <button id="deny-btn">Deny</buttons>
+            </div>
+        </div>
+    </div>
+    <!-- End modal -->
+
+    <script src="js/global/global.js"></script>
+    <script src="js/mainPage/app.js"></script>
+</body>
+</html>
